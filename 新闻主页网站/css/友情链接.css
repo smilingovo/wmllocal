@@ -1,0 +1,18 @@
+html,body{
+	height: 100%;overflow: hidden;
+}
+table,th,td{
+	/*border: 1px solid black;*/width: 100%;
+	text-align: center;font-size: 15px;
+}
+th{height:50px;text-align: left;padding-left: 10px;font-size:15px;font-style: italic;font-weight: bold;
+border-top:4px solid red;color: red;}
+td{
+	text-align: center;font-size: 13px;color: gray;width: 33.33%;height:30px;
+}
+a{
+	text-decoration: none;color: gray;display: block;
+}
+a:hover{
+	text-decoration: underline;color: red;
+}

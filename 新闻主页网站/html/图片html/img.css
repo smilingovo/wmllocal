@@ -1,0 +1,36 @@
+.div{width: 500px;height: 500px;background-color:black;margin-left: auto;margin-right: auto;
+			margin-top:600px;overflow: hidden;position: relative;margin-bottom:1113px;
+			box-shadow: 8px 10px 8px black;border-radius: 15px;}
+			.div img{
+				width: 500px;height: 500px;transition: ease 1s;
+			}
+			.div:hover img{
+				width: 700px;height: 700px;margin: -100px 200px 200px -100px;opacity: 0.6;
+			}
+			
+		
+			div li{list-style-type: none;margin-left: -150px;
+				width: 100px;height: 40px;line-height: 40px;background-color:white;opacity: 0.5;
+				transition: all 2s ease;text-align: center;float: left;clear: right;
+			}
+			div:hover li{
+				width: 100%;margin-left: 0;opacity:0.8;
+			}
+			.div:hover{opacity:1;}
+			.div1{width: 400px;height: 400px;position: absolute;left: 50px;top: 50px;/*background: coral;*/}
+			div p:first-child{
+				color: royalblue;font-weight: bold;text-align: center;
+			}
+			div p:last-child{font-weight: bold;}
+			div p{margin-right: -150px;opacity: 0.5;
+				width: 100px;height: 40px;line-height: 40px;background-color:white;
+				transition: all 2s ease;text-align: center;float: right;clear: left;
+			}
+			div:hover p{
+				width:100%;margin-right: 0;opacity:0.8;
+			}
+			a{
+				text-decoration: none;color: chartreuse;display: block;
+			}
+			a:hover{text-decoration: underline;color:red;}
+			body{background-image: linear-gradient( #CD5C5C,coral,#CD5C5C,#00BFFF);background-repeat: no-repeat;}

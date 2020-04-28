@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css"href="css/知识点.css" />
+		<style>
+			#rightdiv-div1{
+	         width: 60%;
+	         height:200px;background-color:whitesmoke;
+             }
+            /*此处为表单样式*/
+            table{width: 100%;height:200px;text-align: center;border-top: 4px solid red;}
+            input{width:50%;height: 30px;}
+            .denglu{
+	        float: right;margin-right:2px;line-height: 30px;
+	        background-color:indianred;font-size:15px;width:50%;height:30px;border: none;font-weight: 100;}
+            .denglu:hover{background-color:red;color: white;}
+            .zhuce{ float: left;margin-left: 2px;line-height: 30px;
+        	font-size: 15px;width:50%;height:30px;border: none;font-weight:bold;color: red;	}
+            .zhuce:hover{background-color:white;}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div >
+		<h2>主页右侧登录部分涉及知识点</h2><br />
+		<a href="知识点8.html">上一页</a>
+		<a href="知识点10.html">下一页</a>
+		<a href="../highcontrol/highcontrol.html">返回知识点汇总首页</a>
+		<br /><br /><br /><hr />
+		<h3>登录注册页面</h3>
+		<div id="rightdiv-div1"><!--登录注册部分--><!--右侧-->
+     	    		<form action="" method="post">
+     	    			<table >
+     	    				<tr>
+     	    					<td colspan="2">
+     	    						<input type="text" name="users" id="name" required="required" placeholder="账户"/>
+     	    					</td>
+     	    				</tr>
+     	    				<tr>
+     	    					<td colspan="2">
+     	    						<input type="password" name="paw" id="password" required="required" placeholder="密码"/>
+     	    					</td>
+     	    				</tr>
+     	    				<tr>
+     	    					<td style="width: 50%;">
+     	    						<input type="submit" value="登录" class="denglu"/>
+     	    						
+     	    					</td>
+     	    					<td style="width: 50%;">
+     	    						<button class="zhuce" onclick="alert('知识点测试页面，真正页面含有超链接指向注册页面')">注册</button>
+     	    					</td>
+     	    				</tr>
+     	    			</table>
+     	    		</form>
+     	    	</div>
+		<br /><hr />
+		<h3>布局方式</h3>
+		<ul>
+			<p>注册登录界面采用的是div，table布局</p>
+			<p>通过对div进行宽高设置之后，采用table表格布局来布局登录注册界面</p>
+		</ul><br /><hr />
+	<h3>样式更改</h3>
+		<ul>
+			<p>通过对form表单内的input进行宽高大小设置</p>
+			<p>通过引用css来定位input，登录，注册部分的位置</p>
+			<p>required 属性</p>
+			<p>required 属性是布尔属性。</p>
+            <p>如果设置，则规定在提交表单之前必须填写输入字段。</p>
+            <p>required 属性适用于以下输入类型：text、search、url、tel、email、password、date pickers、number、checkbox、radio、and file.</p>
+		<p><a href="https://www.w3school.com.cn/html/html_forms.asp" target="_blank">更多form表单用法</a></p>
+		</ul><br />
+	</body>
+</html>

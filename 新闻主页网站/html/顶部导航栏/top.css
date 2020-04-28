@@ -1,0 +1,90 @@
+	/*- scrollbar -*/
+        ::-webkit-scrollbar {
+            width:4px;
+            height:5px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #999;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:vertical:hover{
+            background-color: #666;
+        }
+        ::-webkit-scrollbar-thumb:vertical:active{
+            background-color: #333;
+        }
+        ::-webkit-scrollbar-button{
+            display: none;
+        }
+        ::-webkit-scrollbar-track{
+            background-color:gainsboro;
+        }
+			html,body{
+	        height: 100%;
+	     
+           }
+        *{margin: 0;padding: 0;} 
+        li{list-style-type: none;}
+        a{text-decoration: none;}
+
+#mian{width: 900px;height:2213px;/*background-image: linear-gradient( #CD5C5C,coral,#CD5C5C,#00BFFF);
+background-repeat: no-repeat;*/background-color: whitesmoke;
+margin-left: auto;margin-right: auto;}
+/*此处往下是开头图片切换样式*/
+.div{width: 100%;height: 500px;position: relative;background-image: url(导航图片/国际/1.jpg);}
+
+#divR{width: 200px;height:500px;float: right;}
+ul{width: 200px;height:500px;list-style-type: none;float: right;}
+li{width: 200px;height:62.5px;text-align: center;background-color:darkslategray;}
+a{
+	width:200px;height:62.5px;/*background-color: red;*/display: block;font-size:11.5px;text-align: left;color: white;
+	line-height:30px;transition: 0.2s;
+}
+.div1{width: 700px;height: 500px;/*background-color: coral;*/position: absolute;left: 0;top:0;display: none;}
+.div2{width: 700px;height: 500px;/*background-color: red;*/position: absolute;left: 0;top:0;display: none;}
+.div3{width: 700px;height: 500px;/*background-color:blue;*/position: absolute;left: 0;top:0;display: none;}
+.div4{width: 700px;height: 500px;/*background-color: fuchsia;*/position: absolute;left: 0;top:0;display: none;}
+.div5{width: 700px;height: 500px;/*background-color: darkgoldenrod;*/position: absolute;left: 0;top:0;display: none;}
+.div6{width: 700px;height: 500px;/*background-color: brown;*/position: absolute;left: 0;top:0;display: none;}
+.div7{width: 700px;height: 500px;/*background-color: green;*/position: absolute;left: 0;top:0;display: none;}
+.div8{width: 700px;height: 500px;/*background-color: yellow;*/position: absolute;left: 0;top:0;display: none;}
+li:hover .div1{display: block;}/*此处实现div的显示效果，当鼠标移动在指定的li上的时候div显示出来，实现切换效果*/
+li:hover .div2{display: block;}
+li:hover .div3{display: block;}
+li:hover .div4{display: block;}
+li:hover .div5{display: block;}
+li:hover .div6{display: block;}
+li:hover .div7{display: block;}
+li:hover .div8{display: block;}
+
+li:hover a{/*实现鼠标放在li上超链接颜色固定，且鼠标移开滑动至当前显示的div上时，a颜色依旧固定。
+	 * 直至离开当前li。之所以出现这样类似于脚本执行的样式原因就在于我的li里有子元素div框，li是父元素，当我鼠标放在当前显示的div上时，
+	 * 实际上因为父子关系，我的鼠标还是在li中移动，所以就出现了鼠标在哪个位置那个位置的超链接颜色固定*/
+	font-size: 12.5px;color: white;background-color: red;font-weight: bold;
+	}
+p{margin:0px 4px}
+/*此处为更换超链接背景图片部分，主要效果是鼠标经过超链接图片展示切换（实际上是超链接背景图片切换）*/
+.a1{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/1.jpg);background-size: cover;background-repeat: no-repeat;}
+.a2{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/2.jpg);background-size: cover;background-repeat: no-repeat;}
+.a3{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/3.jpg);background-size: cover;background-repeat: no-repeat;}
+.a4{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/4.jpg);background-size: cover;background-repeat: no-repeat;}
+.a5{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/5.jpg);background-size: cover;background-repeat: no-repeat;}
+.a6{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/6.jpg);background-size: cover;background-repeat: no-repeat;}
+.a7{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/7.jpg);background-size: cover;background-repeat: no-repeat;}
+.a8{width: 100%;height: 500px;display: block;background-image: url(导航图片/国际/8.jpg);background-size: cover;background-repeat: no-repeat;}
+/*超链接切换图片展示效果结束*/
+
+/*此处为列表视觉部分*/
+.div-list-all{width: 900px;height:270px;background-color: #666666;float: left;margin-top: 8px;}
+.div-1eft{width: 250px;height:250px;background-color:black;float: left;margin: 10px 10px;overflow: hidden;}
+.div-right{width: 620px;height:250px;text-overflow: ellipsis;overflow: hidden; background-color: whitesmoke;float: right;margin: 10px 10px 10px 0;}
+h2{margin-left: 10px;margin-top: 30px;}
+.p{margin-left: 10px;/*background-color: darkcyan;*/margin-top: 40px;}
+.a-1{display: block;font-size: 15px;color: darkslategrey;width: auto;height: auto;transition: ease 0.3s;}
+.a-1:hover{color:red;text-decoration: underline;}
+.a-2{display: block;font-size: 25px;color: darkslategrey;width: auto;height: auto;transition: ease 0.3s;}
+.a-2:hover{color:red;text-decoration: underline;}
+img{width:360px;height:250px;margin-left: -100px;transition:ease 0.5s;}
+img:hover{opacity: 0.7;}
+

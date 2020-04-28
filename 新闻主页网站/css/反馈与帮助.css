@@ -1,0 +1,36 @@
+html,body{
+	height: 100%;/*overflow: hidden;*/
+}
+table{
+	width: 100%;
+	text-align: center;font-size: 15px;border-top:4px solid red;
+}
+th{width: 100%;position: relative;height: 50px;}
+tr>td:first-child{width:20%;
+}
+tr>td:last-child{width: 80%; text-align: left;padding:0px 5px;}
+td{
+	border-bottom: 0.5px solid darkgray;overflow: hidden;height: 79px;position: relative;
+}
+img{
+	width:80%;height:80%;padding: 0px;margin: 0;position: absolute;bottom:5px;left:5px;
+	transition: all ease 0.5s;
+}
+img:hover{
+	width: 160%;height:160%;position: absolute;left: -40%;bottom: -30%;right: -10%;
+}
+a{
+	text-decoration: none;color: black;
+}
+a:hover{
+	text-decoration: underline;color: red;
+}
+.th-left{width:40%;height: 50px;line-height: 50px;
+text-align:left;font-size:15px;font-style: italic;font-weight: bold;
+color: red;float: left;}
+.th-right{width:60%;height: 50px;float: right;line-height: 50px;
+text-align: center;}
+.th-a{text-decoration: none;color: red;text-align: center;
+font-weight: bold;padding: 8px 8px;}
+.th-a:hover{border:2px solid yellowgreen;color:black;}
+.th-a:active{border-color: black;color: gold;}

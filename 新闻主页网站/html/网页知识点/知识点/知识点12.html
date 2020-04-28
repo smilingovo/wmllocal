@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css"href="css/知识点.css" />
+		<style>
+			.div{width: 400px;height: 400px;overflow: hidden;position: relative;
+			float: left;margin-left: 10px;background-color: white;
+			box-shadow: 8px 10px 8px black;border-radius: 15px;}
+			.div img{
+				width: 400px;height:400px;transition: ease 1s;
+			}
+			.div:hover img{
+				width: 600px;height: 600px;margin: -100px 200px 200px -100px;
+			}
+			
+		
+			.div li{list-style-type: none;margin-left: -150px;
+				width: 100px;height: 40px;line-height: 40px;background-color:white;opacity: 0.5;
+				transition: all 2s ease;text-align: center;float: left;clear: right;
+			}
+			.div:hover li{
+				width: 100%;margin-left: 0;opacity:0.8;
+			}
+			
+			.div1{width: 400px;height: 400px;position: absolute;left:0px;top: 50px;/*background: coral;*/}
+			.div p:first-child{
+				color: royalblue;font-weight: bold;text-align: center;
+			}
+			.div p:last-child{font-weight: bold;}
+			.div p{margin-right: -150px;opacity: 0.5;
+				width: 100px;height: 40px;line-height: 40px;background-color:white;
+				transition: all 2s ease;text-align: center;float: right;clear: left;
+			}
+			.div:hover p{
+				width:100%;margin-right: 0;opacity:0.8;
+			}
+			button{width: 100%;height: 100%;background-color:royalblue;border: none;}
+			table{width:80%;height: auto;}
+			td{padding: 8px 8px;border: 1px solid black;}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div >
+		<h2>精彩图片涉及知识点</h2><br />
+		<a href="知识点11.html">上一页</a>
+		<a href="知识点13.html">下一页</a>
+		<a href="../highcontrol/highcontrol.html">返回知识点汇总首页</a>
+		<br /><br /><br /><hr />
+		<h3>精彩图片布局</h3>
+		<ul>		
+        <h3>table布局</h3>        
+		</ul><br /><hr />
+		<h3>精彩图片跳转页面内容样式</h3>
+		<ul>
+		<div class="div">
+			<img src="../../图片html/imgall/p2.jpg"/>
+			<div class="div1">
+				<p>图片简介</p>
+				<li>xxxxxxxxxxxx</li>
+				<p>xxxxxxxxxxxx</p>
+				<li>xxxxxxxxxxxx</li>
+				<p>xxxxxxxxxxxx</p>
+				<li>xxxxxxxxxxxx</li>
+				<p><button onclick="alert('知识点测试专用，如要查看功能请前往新闻网精彩图片一栏')"><a href="">返回首页</a></button></p>
+			</div>
+		</div>
+        </ul>
+	    <h3 style="float: left;margin-top: 420px;position: absolute;left: 0;">精彩图片布局/样式涉及知识点</h3>
+		<ul style="float: left;margin-top: 30px;">		
+        <h4>div+溢出overflow+img图片+外边距margin+伪类hover+过渡属性transition+float浮动+clear属性</h4> 
+        <p>通过对div进行宽高大小设置，并使用overflow:hidden;来设置div内的元素溢出隐藏</p>
+        <p>在div内插入img图片并设置大小填满div，通过使用hover伪类</p>
+        <p>当鼠标放在div上时，img图片同比例放大，使用外边距来调整图片放大效果的行为路径</p>
+        <p>在图片上使用绝对定位放置div，在div内部放置p元素和li元素，设置浮动分别为左浮动和右浮动。</p>
+        <p>通过将p和li分别使用clear来清除右浮动和左浮动，使得p元素右侧不允许右浮动，li元素左侧不允许左浮动。</p>
+        <p>最后设置伪类hover和transition属性来显示最佳效果。</p>
+        <h4>clear属性
+        </h4>
+        <p>clear 属性规定元素的哪一侧不允许其他浮动元素。clear有四个属性值，分别是left（在左侧不允许浮动元素）、right（在右侧不允许浮动元素）、both（在左右两侧均不允许浮动元素）、none（默认值。允许浮动元素出现在两侧）、inherit（规定应该从父元素继承 clear 属性的值）。</p>
+		<table cellpadding="0"cellspacing="0">
+       	<tr>
+       		<td style="background-color: #CD5C5C;color: gold;">值</td>
+       		<td style="background-color: #CD5C5C;color: gold;">描述</td>
+       	</tr>
+       	<tr>
+       		<td>left</td>
+       		<td>在左侧不允许浮动元素。</td>
+       	</tr>
+       		<tr>
+       		<td>right</td>
+       		<td>在右侧不允许浮动元素。</td>
+       	</tr>
+       		<tr>
+       		<td>both</td>
+       		<td>在左右两侧均不允许浮动元素。</td>
+       	</tr>
+       		<tr>
+       		<td>none</td>
+       		<td>默认值。允许浮动元素出现在两侧。</td>
+       	</tr>
+       		<tr>
+       		<td>inherit</td>
+       		<td>规定应该从父元素继承 clear 属性的值。</td>
+       	</tr>
+       </table>
+		</ul><br />
+	</body>
+</html>

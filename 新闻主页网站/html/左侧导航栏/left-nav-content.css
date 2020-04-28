@@ -1,0 +1,68 @@
+/*- scrollbar -*/
+        ::-webkit-scrollbar {
+            width:10px;
+            height:5px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #999;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:vertical:hover{
+            background-color: #666;
+        }
+        ::-webkit-scrollbar-thumb:vertical:active{
+            background-color: #333;
+        }
+        ::-webkit-scrollbar-button{
+            display: none;
+        }
+        ::-webkit-scrollbar-track{
+            background-color:gainsboro;
+        }
+			html,body{
+	        height: 100%;/*overflow: hidden;*/overflow-x: hidden;/*overflow-y: hidden;*/
+	     
+           }
+        *{margin: 0;padding: 0;} 
+			div{
+				width:900px;height:900px;margin-left:auto;margin-right: auto;
+				
+			}
+			#div{
+				width:100%;height:40px;background-color: deepskyblue;
+			}
+			#div1{
+				width:100%;height:40px;float:left;background-color:indianred;text-align: left;
+			}
+		
+			table,tr,td{
+				width: 100%;
+			}
+			td{
+				height:180px;position: relative;overflow: hidden;background-color: black;
+			}
+			tr>td:first-child{width:20%;background-color: #666666;text-align: center;
+             }
+            tr>td:last-child{width: 80%; text-align: left;padding:0px 5px;margin: 5px 0px;
+            position: relative;background-color:whitesmoke;
+            }
+            span{
+	font-style:italic;color: gold;border-bottom: 2px solid white;
+	display: inline;padding-left:5px;height: 40px;padding-right: 30px;
+	font-size: 15px;font-weight: bold;text-align: left;line-height: 40px;
+}
+img{
+	width: 120%;height:100%;margin-left: -10%;margin-right: -10%; transition: all ease 0.5s;position: absolute;top: 0;left: 0;opacity: 0.7;
+}
+img:hover{
+	width: 140%;height: 120%;margin: -10% 20% 20% -20%;opacity:1;
+}
+p{
+	text-align: center;font-size: 30px;line-height: 40px;height: 40px;font-style: italic;font-weight: bold;
+	color:indianred;text-shadow:gray 5px 5px 5px;
+}
+a{color: darkred;text-decoration: none;}
+a:visited{color:red;}
+a:hover{color: red;text-decoration: underline;}
+a:active{color: gold;}

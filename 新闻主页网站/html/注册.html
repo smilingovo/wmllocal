@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/注册.css"/>
+		<meta charset="utf-8" />
+		<title>注册新闻网</title>
+	</head>
+	<body>
+		<div>
+			<img src="../img/新闻.png" style="position: absolute; top: 0px;right: 10px;"width="400px"height="300px"/>
+		<form action="" method="post">
+			<table cellspacing="10">
+				<tr>
+					<td><a href="../index.html"><img src="../img/新闻网logo.png" style="float: left;height:40px;"/></a></td>
+					<td ><p style="font-size: 25px;font-weight: bold;width:98%; height: 40px;background-color: gray;text-align: center;border-radius: 8px;">用户注册</p></td>
+					<td><p style="color: red;">若要放弃注册，点击左侧新闻网logo即可回首页</p></td>
+				</tr>
+				<tr>
+					<td>*真实姓名：</td>
+					<td><input type="text" id="name" name="trueName" required="required"/></td>
+					<td><p>请输入真实姓名，其他用户不可见，我网将严格保密</p></td></tr>
+				<tr>
+					<td><b>*身份证：</b></td>
+					<td><p>
+			<select  name="身份证类型" value="护照" id="idcard">
+				<option value="0">居民身份证</option>
+				<option value="1">军人身份证件</option>
+				<option value="2">港澳居民往来内地通行证</option>
+				<option value="3">台湾居民来往大陆通行证或者其他有效旅行证件</option>
+				<option value="4" selected>护照</option>
+			</select>
+			</p></td>
+					<td><p>请选择您的身份证类型</p></td>
+				</tr>
+				<tr>
+					<td>*身份证号码：</td>
+					<td><input type="password" id="password" name="psw" required="required"/></td>
+					<td><p>请输入您的身份证号码</p></td>
+				</tr>
+				<tr>
+					<td>*手机号：</td>
+					<td><input type="text" id="number" name="name1" required="required" /></td>
+					<td><p>请使用你的手机注册，绑定后可用手机号登入新闻网通行证</p></td>
+				</tr>
+				<tr>
+					<td>*短信验证码：</td>
+					<td><input name="name2" id="number1" type="text" required="required"/></td>
+					<td><p>请输入6位短信验证码</p></td>
+				</tr>
+				<tr>
+					<td>*昵称：</td>
+					<td><input type="text" id="username" name="nc" required="required"/></td>
+					<td><p>2-12个中英文或数字，将公开显示</p></td>
+				</tr>
+				<tr>
+					<td>*密码：</td>
+					<td><input type="password" id="password1" name="psd" required="required"/></td>
+					<td><p>8-20个字符，建议使用大小写字母及数字，增强密码安全性</p></td>
+				</tr>
+				<tr>
+					<td>*确认密码：</td>
+					<td><input type="password" id="password1" name="psd1" required="required"/></td>
+					<td><p>请再次输入密码</p></td>
+				</tr>
+				<tr>
+					<td colspan="3" style="text-align: center;">
+						<input name="radio" type="radio"  value="0" required="required" style="width: 20px;height: 20px;"/>
+					  我已阅读并同意新闻网用户协议  新闻网个人信息保护政策
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="提交" style="float:left;height: 33.33px;width: 100px;"/>
+						<input name="reset" type="reset" value="重置" style="float:right;height: 33.33px;width: 100px;"/>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css"href="css/知识点.css" />
+		<style>
+			table{width:80%;height: auto;}
+			td{padding: 8px 8px;border: 1px solid black;}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div >
+		<h2>顶部导航栏（国际-时政内容知识点）</h2><br />
+		<a href="知识点3.html">上一页</a>
+		<a href="知识点5.html">下一页</a>
+		<a href="../highcontrol/highcontrol.html">返回知识点汇总首页</a>
+		<br /><br /><br /><hr />
+		<h3>国际-时政网页设计中涉及的知识点</h3>
+		<ul>		
+       <p>本网页设计中，顶部导航栏从国际到时政部分的内容设计采用的是同一个页面布局</p>
+       <p>涉及到下拉菜单原理</p>
+       <p>过渡属性transition</p>
+		</ul><br /><hr />
+		<h3>下拉菜单原理</h3>
+		<ul>
+	   <p>通过两个div，一个div作为父元素，另一个div作为子元素</p>
+       <p>当鼠标放在父元素的div上时，子元素发生改变</p>
+       <p>先将父元素设置为相对定位，以此来设置子元素使用绝对定位，将子元素用display:none;来隐藏</p>
+       <p>使用hover伪类来设置当鼠标放在div父元素上时，子元素的display:none;改为display: block;使得子元素显现出来</p>
+		</ul><br /><hr />
+	<h3>过渡属性transition</h3>
+		<ul>
+		<p>transition 属性设置元素当过渡效果，四个简写属性为：
+       <p>transition-property</p>
+       <p>transition-duration</p>
+       <p>transition-timing-function</p>
+       <p>transition-delay</p>
+       <p>注意： 始终指定transition-duration属性，否则持续时间为0，transition不会有任何效果。</p></p>
+       <table cellpadding="0"cellspacing="0">
+       	<tr>
+       		<td style="background-color: #CD5C5C;color: gold;">值</td>
+       		<td style="background-color: #CD5C5C;color: gold;">描述</td>
+       	</tr>
+       	<tr>
+       		<td>linear</td>
+       		<td>规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。</td>
+       	</tr>
+       		<tr>
+       		<td>ease</td>
+       		<td>规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）。</td>
+       	</tr>
+       		<tr>
+       		<td>ease-in</td>
+       		<td>规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）。</td>
+       	</tr>
+       		<tr>
+       		<td>ease-out</td>
+       		<td>规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。</td>
+       	</tr>
+       		<tr>
+       		<td>ease-in-out</td>
+       		<td>规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）。</td>
+       	</tr>
+       		<tr>
+       		<td>cubic-bezier(n,n,n,n)	</td>
+       		<td>在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。</td>
+       	</tr>
+       </table>
+		</ul><br />
+	</body>
+</html>

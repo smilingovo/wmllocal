@@ -1,0 +1,104 @@
+	/*- scrollbar -*//*此处实现滑轮滚动条样式修改仅兼容谷歌*/
+        ::-webkit-scrollbar {
+            width:4px;
+            height:5px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #999;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:vertical:hover{
+            background-color: #666;
+        }
+        ::-webkit-scrollbar-thumb:vertical:active{
+            background-color: #333;
+        }
+        ::-webkit-scrollbar-button{
+            display: none;
+        }
+        ::-webkit-scrollbar-track{
+            background-color:gainsboro;
+        }
+			html,body{
+	        height: 100%;background-color: whitesmoke;
+	     
+           }
+        *{margin: 0;padding: 0;} 
+#miandiv{width: 900px;height:2213px;/*background-image: linear-gradient( #CD5C5C,coral,#CD5C5C,#00BFFF);*/
+/*background-repeat: no-repeat;*/background-image: url(../../img/5-120601092216.gif);
+margin-left: auto;margin-right: auto;}
+
+/*从此处往下是图片切换效果样式，运用原理是导航栏下拉菜单原理，定位position属性，以及伪类hover的灵活使用*/
+
+.div{width: 100%;height: 500px;position: relative;background-image: url(导航图片/军事/j1.jpg);background-size:cover;}
+ul{width:900px;height:30px;list-style-type: none;
+background-color:darkslategray;float: right;margin-top: 470px;
+}
+#divli{width: 472px; margin-left: auto;margin-right: auto;height: 30px;/*background-color: yellow;*/}
+li{/*width:112.5px;*/height:30px;text-align: center;width:50px;margin-left: 8px;
+float:left;
+}
+.div1{width: 900px;height: 470px;/*background-color:darkslategrey;*/position: absolute;left: 0;top:0;display: none;;}
+.div2{width: 900px;height: 470px;/*background-color: red;*/position: absolute;left: 0;top:0;display: none;}
+.div3{width: 900px;height: 470px;/*background-color:blue;*/position: absolute;left: 0;top:0;display: none;}
+.div4{width: 900px;height: 470px;/*background-color: fuchsia;*/position: absolute;left: 0;top:0;display: none;}
+.div5{width: 900px;height: 470px;/*background-color: darkgoldenrod;*/position: absolute;left: 0;top:0;display: none;}
+.div6{width: 900px;height: 470px;/*background-color: brown;*/position: absolute;left: 0;top:0;display: none;}
+.div7{width: 900px;height: 470px;/*background-color: green;*/position: absolute;left: 0;top:0;display: none;}
+.div8{width: 900px;height: 470px;/*background-color: yellow;*/position: absolute;left: 0;top:0;display: none;}
+
+li:hover .div1{display: block;}/*此处实现div的显示效果，当鼠标移动在指定的里上的时候div显示出来，实现切换效果*/
+li:hover .div2{display: block;}
+li:hover .div3{display: block;}
+li:hover .div4{display: block;}
+li:hover .div5{display: block;}
+li:hover .div6{display: block;}
+li:hover .div7{display: block;}
+li:hover .div8{display: block;}
+li:hover .a{
+	/*实现鼠标放在li上超链接颜色固定，且鼠标移开滑动至当前显示的div上时，a颜色依旧固定。
+	 * 直至离开当前li。之所以出现这样类似于脚本执行的样式原因就在于我的li里有子元素div框，li是父元素，当我鼠标放在当前显示的div上时，
+	 * 实际上因为父子关系，我的鼠标还是在li中移动，所以就出现了鼠标在哪个位置那个位置的超链接颜色固定*/
+	/*font-size: 12px;color: white;*/background-color: red;/*font-weight: bold;*/
+}
+.a{display: block;width:50px;height: 10px;line-height: 10px;background-color: white;transition:ease 0.2s;
+/*border-radius: 50px;*/margin-top: 10px;border-radius: 3px;}/*此处是对超链接的框以及内容样式的改变，采用的过渡transitin属性让鼠标经过超链接时有一个过渡时间*/
+.a:hover{text-decoration: none;background-color:red;}
+
+.a1:hover{text-decoration: underline;color: orangered;}/*此处是实现显示出鼠标放在div的框里时超链接文本的内容颜色*/
+.a2:hover{text-decoration: underline;color: orangered;}
+.a3:hover{text-decoration: underline;color: orangered;}
+.a4:hover{text-decoration: underline;color: orangered;}
+.a5:hover{text-decoration: underline;color: orangered;}
+.a6:hover{text-decoration: underline;color: orangered;}
+.a7:hover{text-decoration: underline;color: orangered;}
+.a8:hover{text-decoration: underline;color: orangered;}
+
+/*此处网上是图片切换，图片切换效果在此处结束*/
+
+/*以下是视图列表部分*/
+
+.divleft{width: 596px;height: 1000px;/*background-color: #2F4F4F;*/float: left;margin-top: 8px;border-top:4px solid black ;}
+.divright{width: 296px;height: 1000px;/*background-color: yellowgreen;*/float: right;
+margin-top: 8px;border-top:4px solid indianred;margin-left: 8px;}
+.divleft1{width: 200px;height: 200px;background-color: white;float: left;margin-left: 8px;float: left;margin-top: 8px;overflow: hidden;}
+.divleft2{width: 380px;height: 200px;background-color:whitesmoke;float: right;margin-left: 8px;margin-top: 8px;overflow: hidden;}
+.divright1{width: 288px;height:198px;margin: 8px 8px 0px 0;float: left;/*background-color:darkcyan;*/border-bottom: 1px solid red;
+overflow: hidden;background-image: url(../../img/新闻.png);background-size:cover;border-top: 1px solid red;}
+.h5{background-color:white;margin-top: 20px;width: 288px;opacity: 0.5;height: 30px;line-height: 30px;overflow:hidden;
+margin-bottom: 20px;margin-left: -288px;transition:ease 1s;}
+#h5{background-color:white;width: 288px;opacity: 0.5;height: 30px;line-height: 30px;overflow: hidden;
+margin-left: -288px;transition:ease 1s;}
+.divright1:hover .h5{width: 100%;margin-left: 0;opacity: 0.8;border-radius: 7px;}
+.divright1:hover #h5{width: 100%;margin-left: 0;opacity: 0.8;border-radius: 7px;}
+.divright1 a{text-decoration: none;color: black;display: block;margin-left: 20px;}
+.h5:hover a{text-decoration: underline;color: red;}
+#h5:hover a{text-decoration: underline;color: red;height: auto;}
+.divleft1 img{width: 300px;height: 200px;margin-left: -20px;transition: ease 0.5s;}
+.divleft1:hover img{width: 350px;height: 250px;margin: -25px 50px 50px -25px;}
+h3{margin-top: 8px;}
+.divleft2 p{margin-top: 20px;margin-left: 8px;margin-right: 8px;}
+.divleft2>p>a{color:brown;text-decoration: none;}/*选择器的灵活使用，此处意思是找到divleft2的元素，找到p元素，接着找到a，仅对对a进行样式更改*/
+p:hover a{text-decoration: underline;color: red;}/*此处是对hover的灵活运用，意思是鼠标放在p元素上的时候，超链接a的样式发生改变。不要理解成鼠标放在超连接上，超链接a发生变化哈*/
+

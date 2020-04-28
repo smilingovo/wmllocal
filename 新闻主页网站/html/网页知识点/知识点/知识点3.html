@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css"href="css/知识点.css" />
+		<title></title>
+	</head>
+	<body>
+		<div >
+		<h2>左侧导航栏知识点</h2><br />
+		<a href="知识点2.html">上一页</a>
+		<a href="知识点4.html">下一页</a>
+		<a href="../highcontrol/highcontrol.html">返回知识点汇总首页</a>
+		<br /><br /><br /><hr />
+		<h3>左侧导航栏布局方式</h3>
+		<ul>
+			<pre style="color: white;font-size: 15px;">
+       &lt;div id="leftdiv"><!--左侧-->
+     			
+     	&lt;p id="p" style="margin-bottom: 20px;">&lt;a href="index.html"target="_self" style="color: red;">新闻网&lt;/a>&lt;/li>
+     		&lt;ul class="ul">
+				&lt;li>&lt;a href="html/左侧导航栏/热点.html" class="a1" target="framecenter">热点&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/美食.html" class="a1" target="framecenter">美食&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/图片.html" class="a1" target="framecenter">图片&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/游戏.html" class="a1" target="framecenter">游戏&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/体育.html" class="a1" target="framecenter">体育&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/娱乐.html" class="a1" target="framecenter">娱乐&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/教育.html" class="a1" target="framecenter">教育&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="html/左侧导航栏/健康.html" class="a1" target="framecenter">健康&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;div id="top">
+		&lt;li>&lt;a href="#back" target="">&lt;img src="img/顶部.png" id="topimg"/>&lt;/a>&lt;/li>
+		&lt;/div>
+     	&lt;/div>
+     	    </pre>
+		</ul><br /><hr />
+		<h3>左侧导航栏布局思路</h3>
+		<ul>
+		<p>通过放置div并使用id="leftdiv"来引用左侧导航栏的css样式使其左浮动</p>
+        <p>然后放置p标签并将字体设置大小样式来作为本网站的logo，并放上超链接a来使得logo可点击，点击后依旧是本页面</p>
+        <p>通过使用ul，li来进行宽高，大小设置作为左侧导航栏的超链接放置位置。</p>
+		</ul><br /><hr />
+	<h3>返回顶部样式</h3>
+		<ul>
+			<p>通过在左侧导航栏里放置另一个div并使用id="top"来引用css样式</p>
+        <p>通过css样式来定位返回顶部按钮的大小和位置</p>
+        <p>使用超链接锚来实现返回顶部功能，通过在header里放置 &lt;a name="back">&lt;/a></p>
+        <p>使用&lt; a href="#back">&lt;/a>指向header实现返回顶部</p>
+		</ul><br />
+	</body>
+</html>

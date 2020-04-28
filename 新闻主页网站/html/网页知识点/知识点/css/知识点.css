@@ -1,0 +1,15 @@
+html,body{height: 100%;width: 100%;}
+*{margin: 0;padding: 0;}
+body{
+	background-image: linear-gradient( #CD5C5C,coral,#CD5C5C,#00BFFF);
+    background-repeat: no-repeat;overflow-y:hidden;
+}
+ul{width:80%;height: auto;}
+h1,h2,h3,h4,h5,h6{font-family: "微软雅黑";font-weight: bold;margin-top: 20px;margin-bottom: 10px;margin-left:5px;}
+			p{font-family: "微软雅黑";font-size:15px;color:black;margin: 8px 10px;}
+			a{text-decoration: none;padding: 5px 10px;margin-right: 10px;margin-left:10px ;
+			border-style: solid;border-color:yellowgreen;font-family: "微软雅黑";
+			color:black;font-weight: bold;transition: all  0.5s;
+			}
+			a:hover{font-family: "微软雅黑";color:white;border-color:black;}
+			hr{border: 1px solid darkgrey;}

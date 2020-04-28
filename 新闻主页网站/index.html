@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/mianstyle.css" />
+		<style>
+			/*- scrollbar谷歌 -*/
+			
+			 ::-webkit-scrollbar {
+				width: 10px;
+				height: 5px;
+			}
+			
+			 ::-webkit-scrollbar-thumb {
+				background-color: #999;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+			
+			 ::-webkit-scrollbar-thumb:vertical:hover {
+				background-color: #666;
+			}
+			
+			 ::-webkit-scrollbar-thumb:vertical:active {
+				background-color: #333;
+			}
+			
+			 ::-webkit-scrollbar-button {
+				display: none;
+			}
+			
+			 ::-webkit-scrollbar-track {
+				background-color: gainsboro;
+			}
+		</style>
+		<title>新闻网</title>
+	</head>
+	<body>
+		<a name="back"></a>
+		<header id="header">
+			<div id="headerlogo">
+				<p id="p">
+					<a href="index.html" target="_self" style="color: red;">新闻网</a>
+				</p>
+			</div>
+			<div id="headernav">
+				<ul class="ul">
+					<li class="li">
+						<a href="index.html" class="a" target="_self">首页</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/国际.html" class="a" target="framecenter">国际</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/国内.html" class="a" target="framecenter">国内</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/社会.html" class="a" target="framecenter">社会</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/法制.html" class="a" target="framecenter">法制</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/时政.html" class="a" target="framecenter">时政</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/财经.html" class="a" target="framecenter">财经</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/军事.html" class="a" target="framecenter">军事</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/科技.html" class="a" target="framecenter">科技</a>
+					</li>
+					<li class="li">
+						<a href="html/顶部导航栏/生活.html" class="a" target="framecenter">生活</a>
+					</li>
+					<li class="li">
+						<a href="#bottom" class="a" target="">更多</a>
+					</li>
+				</ul>
+			</div>
+			<div id="headerright">
+				<form target="_blank" action="http://www.baidu.com/s">
+					<input type="text" id="search1" name="word" class="right1" required="required" />
+					<input type="submit" value="站外搜索" class="right2" />
+				</form>
+			</div>
+		</header>
+		<div id="container">
+			<!--父元素-->
+			<div id="leftdiv">
+				<!--左侧-->
+				<p id="p" style="margin-bottom: 20px;">
+					<a href="index.html" target="_self" style="color: red;">新闻网</a>
+				</p>
+				<ul class="ul">
+					<li>
+						<a href="html/左侧导航栏/热点.html" class="a1" target="framecenter">热点</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/美食.html" class="a1" target="framecenter">美食</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/图片.html" class="a1" target="framecenter">图片</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/游戏.html" class="a1" target="framecenter">游戏</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/体育.html" class="a1" target="framecenter">体育</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/娱乐.html" class="a1" target="framecenter">娱乐</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/教育.html" class="a1" target="framecenter">教育</a>
+					</li>
+					<li>
+						<a href="html/左侧导航栏/健康.html" class="a1" target="framecenter">健康</a>
+					</li>
+				</ul>
+				<div id="top">
+					<li>
+						<a href="#back" target=""><img src="img/顶部.png" id="topimg" /></a>
+					</li>
+				</div>
+			</div>
+			<div id="centerdiv">
+				<!--中部-->
+				<a name="texttop"></a>
+				<iframe src="html/热点新闻.html" width="100%" height="2213px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="framecenter"></iframe>
+			</div>
+			<div id="rightdiv">
+				<div id="rightdiv-div1">
+					<!--登录注册部分-->
+					<!--右侧-->
+					<form action="" method="post">
+						<table>
+							<tr>
+								<td>
+									<input type="text" name="users" id="name" required="required" placeholder="账户" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="password" name="paw" id="password" required="required" placeholder="密码" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="submit" value="登录" class="denglu" />
+									<button class="zhuce"><a href="html/注册.html" style="display: block;width: 100%;height: 30px;line-height: 30px;">注册</a></button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="rightdiv-div2">
+					<iframe src="html/反馈与帮助.html" width="100%" height="395px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="framediv2"></iframe>
+				</div>
+				<div id="rightdiv-div3">
+					<iframe src="html/精彩图片.html" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="framediv3"></iframe>
+				</div>
+				<div id="rightdiv-div4">
+					<iframe src="html/视频新闻.html" width="100%" height="280px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="framediv4"></iframe>
+				</div>
+				<div id="rightdiv-div5">
+					<iframe src="html/更多.html" width="100%" height="300px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="framediv5"></iframe>
+				</div>
+				<div id="rightdiv-div6">
+					<iframe src="html/友情链接.html" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="framediv6"></iframe>
+				</div>
+			</div>
+			<footer>
+				<a name="bottom"></a>
+				<div id="top">
+					<li>
+						<a href="#back" target=""><img src="img/顶部.png" id="topimg" /></a>
+					</li>
+				</div>
+				<div class="footerdiv">
+					<table>
+						<tr>
+							<th colspan="15">
+								<p id="theader">合作媒体</p>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://www.gov.cn/" target="_blank">中国政府网</a>
+							</td>
+							<td>
+								<a href="http://www.china.com.cn/" target="_blank">中国网 </a>
+							</td>
+							<td>
+								<a href="http://www.people.com.cn/" target="_blank">人民网</a>
+							</td>
+							<td>
+								<a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+							</td>
+							<td>
+								<a href="http://www.chinanews.com/" target="_blank">中新网</a>
+							</td>
+							<td>
+								<a href="http://www.cctv.com/default.shtml" target="_blank">央视网 </a>
+							</td>
+							<td>
+								<a href="http://www.cnr.cn/" target="_blank">中广网 </a>
+							</td>
+							<td>
+								<a href="http://www.chinadaily.com.cn/" target="_blank">中国日报 </a>
+							</td>
+							<td>
+								<a href="http://www.cyol.net/node/index.htm" target="_blank">中青在线 </a>
+							</td>
+							<td>
+								<a href="http://www.gmw.cn/" target="_blank">光明网 </a>
+							</td>
+							<td>
+								<a href="http://www.chinamil.com.cn/" target="_blank"> 解放军报 </a>
+							</td>
+							<td>
+								<a href="http://www.legaldaily.com.cn/" target="_blank">法制日报</a>
+							</td>
+							<td>
+								<a href="http://www.taiwan.cn/" target="_blank">中国台湾网</a>
+							</td>
+							<td>
+								<a href="http://www.ce.cn/" target="_blank"> 中经网 </a>
+							</td>
+							<td>
+								<a href="http://www.nfcmag.com/" target="_blank">南风窗</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://www.chinaweekly.cn/" target="_blank">中国周刊</a>
+							</td>
+							<td>
+								<a href="http://www.lifeweek.com.cn/" target="_blank">三联生活周刊</a>
+							</td>
+							<td>
+								<a href="http://www.ynet.com/" target="_blank">北青网</a>
+							</td>
+							<td>
+								<a href="http://www.dayoo.com/" target="_blank">大洋网</a>
+							</td>
+							<td>
+								<a href="http://www.nanfangdaily.com.cn/" target="_blank">南方报业</a>
+							</td>
+							<td>
+								<a href="http://www.ycwb.com/" target="_blank"> 金羊网</a>
+							</td>
+							<td>
+								<a href="http://www.southcn.com/" target="_blank">南方网</a>
+							</td>
+							<td>
+								<a href="http://www.eastday.com/" target="_blank">东方网 </a>
+							</td>
+							<td>
+								<a href="http://www.21dnn.com/" target="_blank">千龙网 </a>
+							</td>
+							<td>
+								<a href="http://www.21dnn.com/" target="_blank">新京报 </a>
+							</td>
+							<td>
+								<a href="http://epaper.jinghua.cn/" target="_blank">京华时报</a>
+							</td>
+							<td>
+								<a href="http://www.rednet.com.cn/" target="_blank">红网 </a>
+							</td>
+							<td>
+								<a href="http://workercn.cn/" target="_blank">工人日报</a>
+							</td>
+							<td>
+								<a href="http://www.inewsweek.cn/" target="_blank">中国新闻周刊</a>
+							</td>
+							<td>
+								<a href="http://www.cankaoxiaoxi.com/" target="_blank">参考消息</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://www.neweekly.com.cn/" target="_blank">新周刊</a>
+							</td>
+							<td>
+								<a href="http://www.dahe.cn/" target="_blank">大河网 </a>
+							</td>
+							<td>
+								<a href="http://www.chinapeace.org.cn/" target="_blank">中国长安网</a>
+							</td>
+							<td>
+								<a href="http://www.huanqiu.com/" target="_blank">环球网</a>
+							</td>
+							<td>
+								<a href="http://www.newssc.org/" target="_blank">四川新闻网</a>
+							</td>
+							<td>
+								<a href="http://www.morningpost.com.cn/" target="_blank">北晨网</a>
+							</td>
+							<td>
+								<a href="http://www.zjol.com.cn/" target="_blank">浙江在线 </a>
+							</td>
+							<td>
+								<a href="http://gb.cri.cn/" target="_blank">国际在线</a>
+							</td>
+							<td>
+								<a href="http://www.e23.cn/" target="_blank">舜网 </a>
+							</td>
+							<td>
+								<a href="http://www.xkb.com.cn./index.php" target="_blank">新快网</a>
+							</td>
+							<td>
+								<a href="http://www.jxcn.cn/" target="_blank">中国江西网</a>
+							</td>
+							<td>
+								<a href="http://www.yunnan.cn/" target="_blank">云南网</a>
+							</td>
+							<td>
+								<a href="http://www.szed.com/" target="_blank"> 深圳新闻网 </a>
+							</td>
+							<td>
+								<a href="http://www.anhuinews.com/" target="_blank">中安在线 </a>
+							</td>
+							<td>
+								<a href="http://www.xwh.cn/" target="_blank">新文化网</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://www.ts.cn/" target="_blank">天山网</a>
+							</td>
+							<td>
+								<a href="http://www.iyaxin.com/" target="_blank">亚心网</a>
+							</td>
+							<td>
+								<a href="http://www.dzwww.com/" target="_blank">大众网 </a>
+							</td>
+							<td>
+								<a href="http://www.jxnews.com.cn/" target="_blank"> 大江网 </a>
+							</td>
+							<td>
+								<a href="http://www.hsw.cn/" target="_blank">华商网 </a>
+							</td>
+							<td>
+								<a href="http://www.chinaxiaokang.com/" target="_blank">中国小康网</a>
+							</td>
+							<td>
+								<a href="http://www.jxcbw.cn/" target="_blank"> 江西晨报网 </a>
+							</td>
+							<td>
+								<a href="http://xmzk.xinminweekly.com.cn/" target="_blank"> 新民周刊</a>
+							</td>
+							<td>
+								<a href="http://www.fjsen.com/" target="_blank">东南网</a>
+							</td>
+							<td>
+								<a href="http://www.sdnews.com.cn/" target="_blank"> 山东新闻网 </a>
+							</td>
+							<td>
+								<a href="http://www.xinjiangnet.com.cn/" target="_blank">新疆网</a>
+							</td>
+							<td>
+								<a href="http://www.cqnews.net/" target="_blank">华龙网 </a>
+							</td>
+							<td>
+								<a href="http://news.cnhubei.com/" target="_blank"> 荆楚网 </a>
+							</td>
+							<td>
+								<a href="http://www.ahwang.cn/" target="_blank">安徽网</a>
+							</td>
+							<td>
+								<a href="http://news.sina.com.cn/media.html" target="_blank">媒体大全</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last">
+					<div class="last1">
+						<p>特别声明：</p>
+					</div>
+					<div class="last2">
+						<p>本网页由王梦雷完成！</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

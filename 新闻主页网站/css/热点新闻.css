@@ -1,0 +1,145 @@
+html,body{
+	        height: 100%;/*overflow: hidden;*/overflow-x: hidden;/*overflow-y: hidden;*/
+	     
+           }
+        *{margin: 0;padding: 0;} 
+        /*BODY   { 
+SCROLLBAR-FACE-COLOR:   rgb(10,236,209);   //滚动条凸出部分的颜色 
+SCROLLBAR-HIGHLIGHT-COLOR: red ;//滚动条空白部分的颜色 
+SCROLLBAR-SHADOW-COLOR:   rgb(255,116,23);//立体滚动条阴影的颜色 
+SCROLLBAR-3DLIGHT-COLOR:   rgb(66,93,127);//滚动条亮边的颜色 
+SCROLLBAR-ARROW-COLOR:   rgb(93,232,255);//上下按钮上三角箭头的颜色 
+SCROLLBAR-TRACK-COLOR:   rgb(255,70,130);//滚动条的背景颜色 
+SCROLLBAR-DARKSHADOW-COLOR:   rgb(10,0,209);//滚动条强阴影的颜 
+SCROLLBAR-BASE-COLOR:   rgb(66,93,128)/滚动条的基本颜色 
+}*/
+
+span{
+	font-style:italic;color: gold;border-bottom: 2px solid white;
+	display: inline;padding-right: 20px;padding-left: 2px;height: 30px;
+	font-size: 15px;font-weight: bold;
+}
+#img{margin-left: 10px;}
+.divmian{width:100%;height: auto;/*margin-left:auto;margin-right: auto; */background-color: cornsilk;}/*此处为父元素*/
+.div1234{
+	width: 100%;height: 600px;background-color: yellow;position: relative;top: 0;left: 0;
+}
+
+.div1{
+	width: 65%;height: 200px;background-color: #CD5C5C;/*border-bottom: 1px solid white;*/float: left;
+	/*position: inherit;left: 0;*/
+}/*此处为左侧第一个子元素，今日要闻样式*/
+#div1-1{width: 100%;height:183px;}
+.div1-1-1{width: 30%;height: 180px;float: left;background-color:whitesmoke;position: relative;overflow: hidden;
+}
+.div1-1-1>img{
+	width:80%;height:80%;position: absolute;left: 10%;top: 10%;
+}
+.div1-1-2{
+	width: 70%;height: 180px;float: right;background-color:white;
+}
+.div2{
+	width: 65%;height: 200px;background-color: #CD5C5C;/*border-bottom: 1px solid white;*/float: left;
+	/*position: inherit;left: 0;*/
+	}/*此处为左侧第二个子元素，今日要闻样式*/
+#div1-2{
+	width: 100%;height:183px;
+	}
+.div3{
+	width: 65%;height:200px;background-color: #CD5C5C;white;float: left;
+	/*position: inherit;left: 0;*/
+	}/*此处为左侧第三个子元素，今日要闻样式*/
+#div1-3{
+	width: 100%;height:183px;
+	}
+#div1-3{
+	width: 100%;height:183px;
+	}
+.div4{
+	/*此处为右侧的子元素，实时热点样式*/
+	width: 35%;height: 602px;background-color:whitesmoke;position:absolute;top: 0px;right: 0px;
+	/*float: right;*/
+}
+.img{position: absolute;top: 0px;}
+h3{margin: 0px 0px 0px 3px ;color: red;}
+.div4-1{
+	width: 100%;height:567px;margin-top: 12px;
+}
+ol{float: left;margin-left:50px;width: 100%;height: 100%;}
+li{
+   width: 100%;height:9.98%;float: left;line-height:39px;opacity: 0.8;
+}
+a{display: block;text-decoration: none;color:brown;}
+a:hover{color: red;text-decoration: underline;}
+
+/*此处为第五个div样式，特别推荐+热点专题样式*/
+.div5{width: 100%;height:304px;float: left;margin-top:8px;position: relative;}
+.div5-1{width: 5%;height:304px;background-color: red;}
+.div5 >.div5-1 > p{
+	text-align: center;height:76px;line-height:76px;
+    font-weight: bold;color: white;font-size: 20px;}/*此处为div5里的div5-1里的p元素样式*/
+/*此处是特别推荐里的内容样式*/
+/*此处实现图片切换功能，实际上是一个iframe框架，加上一行超链接指向内容，此处所看到的图片实际上是每个html页面的body背景
+ * 这样做的目的实际上是为了布局，图片在iframe框架的src中是无法改变大小的，如果放的是图片会影响美观*/
+#div501{width: 40%;height: 300px;background-color:black;float: left;}
+.div501-1{width: 100%;height: 40px;/*margin-top: 10px;*/background-color: white;}
+.div501-li{list-style-type: none;width: 16.66%;height: 40px;text-align: center;}
+.div501-a{width: 50%;height: 30px;background-color:indianred;line-height: 30px;border-radius: 50px;
+display: block;text-align: center;margin-left: 25%;margin-top: 5px;color: white;}
+.div501-a:hover{background-color:black;text-decoration: none;color: gold;}/*图片切换样式结束*/
+
+#div502{width: 60%;height: 300px;/*background-color:black;*/float: right;}
+.div502-1{width: 60%;height: 250px;/*background-color:white;*/float:left;text-align:left;/*line-height: 50px;*/}
+.div502-2{width: 40%;height: 250px;/*background-color:indianred;*/float: right;}
+.div502-3{width: 100%;height: 50px;float: left;background-image: linear-gradient(to right,red,indianred);}
+#div502-3-1{
+	width: 90%;height: 200px;margin-left: 5%;margin-right: 5%;
+    /*background-color:red;*/margin-top: 25px;overflow: hidden;
+}
+#div502-3-1>a>img{width:300px;height:300px; transition:ease 0.5s;margin-left: -20px;}
+#div502-3-1:hover img{width:350px;height: 350px;margin: -25px 50px 50px -45px;}
+.div5-2{/*此处是同时应用在特别推荐和热点专题右侧的整体布局部分*/
+	width: 95%;height: 100%;background-color:whitesmoke;position: absolute;top: 0px;right: 0px;
+    overflow: hidden;
+    border-top: 4px solid red;
+}
+.div5-2-1{width:33.33%;height:300px;float: left;background-color: black;/* margin-left: 10px;*/}/*此处是热点专题里的视频样式布局*/
+.div5-2-2{width:33.33%;height:300px;float: left;background-color:black;/* margin-left: 10px;*/}
+.div5-2-3{width:33.33%;height:300px;float: left;background-color: black; /*margin-left: 10px;*/}
+.div5-3{
+	width: 100%;height: 30px;float: left;background-color: indianred;
+}
+.div6{/*此处为第六个div样式*/
+	width: 100%;height: 450px;background-color:whitesmoke;float: left;margin-top: 8px;
+}
+table,th,td{
+	width: 100%;font-size: 15px;
+}
+.td{
+	width: 33.33%;height:350px;position: relative;overflow: hidden;padding:0px 0px;
+}
+td{
+	width: 33.33%;height: 50px;text-align: center;
+}
+.img6{
+	width:80%;height:80%;transition: all 0.5s;position: absolute;left: 10%;top:10%;
+}
+.img6:hover{
+	width: 100%;height: 100%;margin: -10% 20% 20% -10%;
+}
+/*此处是科普教育旅游的样式*/
+.div7{width:100%;height:auto;/*background-color: darkorange; */float: left;}
+/*.div7-1{ width:50%;height: 500px;background-color:yellowgreen; float: left;}
+.div7-2{width:50%;height: 500px;background-color:dodgerblue;float: right;}*/
+.table7{
+	width: 100%;font-size: 15px;
+}
+.th7{width:33.33%;height:50px;text-align: left;font-size: 20px;font-style: italic;font-weight: bold;
+color: indianred;background-color:gainsboro;}
+.td7{width:33.33%;height:350px;position: relative;overflow: hidden;padding:0px 0px;}
+.img7{
+	width:80%;height:80%;transition: all 0.5s;position: absolute;left: 10%;top:10%;
+}
+.img7:hover{
+	width: 100%;height: 100%;margin: -10% 20% 20% -10%;
+}
